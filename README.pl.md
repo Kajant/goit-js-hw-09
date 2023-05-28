@@ -1,3 +1,5 @@
+https://github.com/Kajant/goit-js-hw-09/
+
 # Parcel template
 
 Ten projekt został stworzony przy pomocy Parcel. W celu zapoznania się i
