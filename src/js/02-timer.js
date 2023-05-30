@@ -16,7 +16,8 @@ let timerId = null;
 
 startBtn.addEventListener('click', () => {
     Notify.info("It's the final countdown!");
-    timerId = setInterval(countdown, 1000);
+  timerId = setInterval(countdown, 1000);
+  startBtn.disabled = true;
 });
 
 const flatpickrTime = flatpickr(timeInput, {

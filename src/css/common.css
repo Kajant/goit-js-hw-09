@@ -19,7 +19,7 @@ img {
 .timer {
   display: flex;
   height: 256px;
-  width: 666px;
+  width: 800px;
   box-shadow: 8px 8px 24px -15px rgb(184, 184, 184);
   justify-content: space-around;
   align-items: center;
@@ -27,6 +27,7 @@ img {
   border-radius: 8px;
 }
 .field {
+  width: 200px;
   position: relative;
   height: 176px;
   padding: 10px;
@@ -37,6 +38,10 @@ img {
   font-size: 99px;
   font-weight: 700;
   text-shadow: 4px 4px 6px rgb(115, 116, 121);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .label {
   color: rgb(115, 116, 121);
