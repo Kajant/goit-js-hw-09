@@ -16,3 +16,34 @@ img {
   display: block;
   max-width: 100%;
 }
+.timer {
+  display: flex;
+  height: 256px;
+  width: 666px;
+  box-shadow: 8px 8px 24px -15px rgb(184, 184, 184);
+  justify-content: space-around;
+  align-items: center;
+  margin: auto;
+  border-radius: 8px;
+}
+.field {
+  position: relative;
+  height: 176px;
+  padding: 10px;
+  display: flex;
+}
+.value {
+  color: white;
+  font-size: 99px;
+  font-weight: 700;
+  text-shadow: 4px 4px 6px rgb(115, 116, 121);
+}
+.label {
+  color: rgb(115, 116, 121);
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: 5%;
+  font-size: 22px;
+  font-weight: 500;
+}
