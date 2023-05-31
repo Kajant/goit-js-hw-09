@@ -1,4 +1,4 @@
-https://github.com/Kajant/goit-js-hw-09/
+https://kajant.github.io/goit-js-hw-09/
 
 # Parcel template
 
