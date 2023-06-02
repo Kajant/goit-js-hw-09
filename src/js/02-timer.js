@@ -18,6 +18,7 @@ startBtn.addEventListener('click', () => {
     Notify.info("It's the final countdown!");
   timerId = setInterval(countdown, 1000);
   startBtn.disabled = true;
+  timeInput.disabled = true;
 });
 
 const flatpickrTime = flatpickr(timeInput, {
@@ -38,14 +39,15 @@ function countdown() {
   const timeLeft = flatpickrTime.selectedDates[0] - new Date();
 
   if (timeLeft < 1000) {
-    startBtn.disabled = false;
+    startBtn.disabled = true;
+    timeInput.disabled = false;
     Notify.success("This is the end.");
     clearInterval(timerId);
   }
 
   const timeMarks = convertMs(timeLeft);
   daysCounter.textContent = addLeadingZero(timeMarks.days);
-  hoursCounter.textContent = addLeadingZero(timeMarks.hours);
+  hoursCounter.textContet = addLeadingZero(timeMarks.hours);
   minutesCounter.textContent = addLeadingZero(timeMarks.minutes);
   secondsCounter.textContent = addLeadingZero(timeMarks.seconds);
 }
